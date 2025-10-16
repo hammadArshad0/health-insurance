@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: add your custom globals below */
+/* Set the default font to the new 'attractive' font family */
+:root {
+	--font-attractive: 'Playfair Display', Inter, ui-serif, Georgia, serif;
+}
+
+html, body, #root {
+	height: 100%;
+	font-family: var(--font-attractive);
+}
+
+@layer base {
+	html, body, #root {
+		@apply font-attractive;
+		height: 100%;
+	}
+}
+
+/* Keep any existing project styles after Tailwind directives */
