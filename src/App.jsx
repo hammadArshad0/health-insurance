@@ -1,19 +1,17 @@
-
 import './App.css'
-import Footer from './components/common/footer'
-import Navbar from './components/common/navbar'
-import Homepage from './components/feature/home/homepage'
+import { BrowserRouter } from 'react-router-dom'
+import Index from './routes/index'
+
 
 function App() {
-  
-
   return (
     <>
-    <Navbar/>
-     <Homepage/>
-     <Footer/>
+      <BrowserRouter>
+        <Index/> {/* This renders all your routes */}
+      </BrowserRouter>
     </>
   )
 }
 
 export default App
+
